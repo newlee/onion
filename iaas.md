@@ -7,4 +7,4 @@ UBIQUITOUS LANGUAGE
 
 Subdomain
 ---------
-![Alt text](iaas_subdomain.svg)
+![](https://rawgit.com/newlee/onion/master/iaas_subdomain.svg)
