@@ -1,0 +1,16 @@
+digraph g {
+	node[style = filled, color = lightblue];
+
+	subgraph iaas {
+		Server[label="Server\l<Core>",shape=box,color=orange]
+		Network[label="Network\l<Core>",shape=box,color=orange]
+		Image[label="Image\l<Support>",shape=box,color=greenyellow]
+		Host[label="Host\l<Support>",shape=box,color=greenyellow]
+		IAM[label="IAM\l<Generic>",shape=box,color=brown]
+		Server->{Network,Image,Host}[dir=none]
+		Server-> IAM[dir=none,style=dotted]
+		Network-> IAM[dir=none,style=dotted]
+		Image->IAM[dir=none,style=dotted]
+	}
+	
+}
