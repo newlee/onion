@@ -7,4 +7,4 @@ UBIQUITOUS LANGUAGE
 
 Subdomain
 ---------
-![](iaas_subdomain.svg)
+![Alt text](iaas_subdomain.svg)
