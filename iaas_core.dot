@@ -1,0 +1,39 @@
+digraph g {
+	node[style = filled, color = lightblue];
+
+	subgraph cluster1 {
+		label="Server"
+		Server->{Volumn, Nic,ServerImage}[dir=none]
+		Server[label="Server",shape=box,color=orange]
+		Volumn[label="Volumn",shape=box,color=orange]
+		Nic[label="Nic",shape=box,color=orange]
+		ServerImage[label="Image",shape=box,color=orange]
+	}
+	subgraph cluster2 {
+		label="Network"
+		Netplane->{Subnet}[dir=none]
+		Subnet->{Port}[dir=none]
+		Netplane[label="Netplane",shape=box,color=orange]
+		Subnet[label="Subnet",shape=box,color=orange]
+		Port[label="Port",shape=box,color=orange]
+	}
+
+	subgraph cluster3 {
+		label="Host\l<Support>"
+		Host->{VM}[dir=none]
+		Host[label="Host",shape=box,color=greenyellow]
+		VM[label="VM",shape=box,color=greenyellow]
+	}
+
+	subgraph cluster4 {
+		label="Image\l<Support>"
+		Image[label="Image",shape=box,color=greenyellow]
+	}
+
+	Image[label="Image\l<Support>",shape=box,color=greenyellow]
+
+	Nic -> Port[dir=none]
+
+	ServerImage->Image[dir=none]
+	Server->VM[dir=none]
+}
