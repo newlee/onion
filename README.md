@@ -3,7 +3,7 @@ Onion
 
 Onion尝试对IaaS和PaaS进行DDD领域模型的战略设计.包括问题域(Core Domain,Support Domain,Generic Domain)和解决方案域（Bounded Context,Context Map).
 
-出于简化模型的考虑，模型有意忽略了Storage，以及网络部分忽略了Public Network.
+出于简化模型的考虑，模型有意忽略了硬件管理和Storage，以及网络部分忽略了Public Network.
 
 Vision Statement
 ---------
@@ -15,3 +15,9 @@ Problem Domain
 ---------
 
 [IaaS](iaas.md)
+
+
+Solution Domain
+---------
+
+[IaaS](iaas2.md)
